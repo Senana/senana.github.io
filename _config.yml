@@ -1,0 +1,41 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: Collateral Benefits
+description: >-
+  This is the collateral benefits realm.
+  Let's make some's make something out of the richness of both worlds. 
+github_username: senana
+email: trayataranga@gmail.com
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://senana.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+include: 
+  - "_pages"
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false

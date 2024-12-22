@@ -1,0 +1,5 @@
+main:
+  - title: "Musings"
+    url: "/posts/"
+  - title: "About"
+    url: "/about/"
