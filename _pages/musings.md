@@ -1,5 +1,5 @@
 ---
 title: Musings
 permalink: /posts/
-layout: posts
+layout: defaults/page
 ---
