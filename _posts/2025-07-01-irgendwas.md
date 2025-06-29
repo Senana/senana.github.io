@@ -4,7 +4,7 @@ tags: agile waterfall
 ---
 
 ![fallend]({{ site.url }}{{ site.baseurl }}/assets/images/fallend.jpg | width=300)
-* caption * 
+*caption* 
 
 ## Hier ist ein Titel 
 und hier schreiben wir einen Text 
