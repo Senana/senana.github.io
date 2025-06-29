@@ -8,11 +8,10 @@ permalink: list/posts.html
 </div>
 
 <div id="currently-showing">
-    <h2 class="d-flex align-items-center mb-3">
-        <span class="text-secondary mr-2">Showing everything matching:</span>
-        <span class="border rounded p-2 mr-2 bg-dark text-secondary" id="active-tag"></span>
+    <h5>
+        <span>Showing everything matching:</span>&nbsp;<span id="active-tag"></span>&nbsp;
         <a class="btn btn-primary btn-small" href="javascript:void(0)" onclick="clearTags()">clear</a>
-    </h4>
+    </h5>
 </div>
 
 {% for post in site.posts %}
@@ -21,7 +20,6 @@ permalink: list/posts.html
 {% endfor %}
 
 <script type="text/javascript">
-
     var parseHash = function() {
         if (document.location.hash.length > 0) {
             var tag = document.location.hash.slice(1)
@@ -34,33 +32,24 @@ permalink: list/posts.html
     }
 
     $(document).ready(parseHash);
-
     $(window).on('hashchange', parseHash);
 
     var showPostByTag = function(tag, name) {
         $("#currently-showing").show()
         $(".card-post").hide()
-        $(".tag").removeClass("bg-warning")
-            .addClass("bg-white")
-            .removeClass("text-dark")
+        $(".tag").removeClass("filter-active").addClass("filter-normal")
         $(".card-post").each(function(idx, card) {
             var matches = $(card).find(".tag-" + tag)
             if (matches.length > 0) $(card).show()
         })
-        $(".tag-" + tag).removeClass("bg-white")
-            .addClass("bg-warning")
-            .addClass("text-dark")
-            .blur()
+        $(".tag-" + tag).removeClass("filter-normal").addClass("filter-active").blur()
         $("#active-tag").html(name)
     }
 
     var clearTags = function() {
         $("#currently-showing").hide()
         $(".card-post").show()
-        $(".tag").removeClass("bg-warning")
-            .addClass("bg-white")
-            .removeClass("text-dark")
+        $(".tag").removeClass("filter-active").addClass("filter-normal")
         document.location.hash = ""
     }
-
 </script>
