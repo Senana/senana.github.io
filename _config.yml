@@ -6,7 +6,7 @@ name: Collateral Benefits
 avatar: /theme/img/avatar.jpg
 description: >-
   This is the collateral benefits realm.
-  Let's make some's make something out of the richness of both worlds. 
+  Let's make something out of the richness of both worlds.
 github_username: senana
 email: trayataranga@gmail.com
 
@@ -16,8 +16,8 @@ email: trayataranga@gmail.com
 permalink: /:categories/:year/:month/:day/:title.html
 
 # Conversion
-markdown:         kramdown
-highlighter:      rouge
+markdown: kramdown
+highlighter: rouge
 excerpt_separator: <!--more-->
 
 # The theme uses the baseurl throughout, which is useful for running the entire
