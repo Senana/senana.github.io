@@ -1,1 +1,5 @@
-This is my blog, [Collateral Mistakes](https://senana.github.io). Go and have a read! :)
+This is my blog, [Collateral Benefits](https://senana.github.io). Go and have a read! :)
+
+Friday Theme is a theme for Jekyll using Bootstrap 4.4 designed to build a great personal web site with a portfolio, blog and project documentation. It is compatible with GitHub Pages. It supports all the Bootstrap components, it has blogs with tags, it has syntax highlighting and it has SVG icons. It is customisable with SCSS by simply changing the default boostrap variables.
+
+It is maintained by Simon Freytag on GitHub 
