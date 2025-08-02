@@ -1,5 +1,5 @@
 ---
-title: 'If you're following your North Star, you're doing it wrong'
+title:  "If you're following your North Star, you're doing it wrong"
 tags: special-interest 
 ---
 
